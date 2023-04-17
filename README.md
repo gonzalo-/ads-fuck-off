@@ -15,7 +15,7 @@ As you probably know I am using #OpenBSD everywhere so I will explain how to mak
 
 ```
 # cd /var/unbound/etc
-# ftp -V https://github.com/gonzalo-/ads-fuck-off/blob/main/unbound/ads.conf
+# ftp -V https://raw.githubusercontent.com/gonzalo-/ads-fuck-off/main/unbound/ads.conf
 ...edit unbound.conf and add 'include: "/var/unbound/etc/ads.conf"'...
 # /etc/rc.d/unbound restart
 ```
@@ -33,7 +33,7 @@ Unwind works without any config file, but you can add some magic to it, of cours
 
 ```
 # cd /etc
-# ftp -V https://github.com/gonzalo-/ads-fuck-off/blob/main/unwind/ads.conf
+# ftp -V https://raw.githubusercontent.com/gonzalo-/ads-fuck-off/main/unwind/ads.conf
 # cat /etc/unwind.conf                                                                                                    
 block list "/etc/ads.conf"
 
